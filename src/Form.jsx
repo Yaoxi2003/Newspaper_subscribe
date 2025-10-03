@@ -19,7 +19,7 @@ export default function Form(props) {
         {!subscribe && <article className="flex flex-col rounded-xl min-w-[320px] max-w-[375px] w-9/10 bg-white 
         md:flex-row md:justify-between md:p-6 md:min-w-[700px] md:max-w-[900px]">
             <div className="flex flex-col gap-7 p-8">
-                <h1 className="text-4xl font-bold">{props.title}</h1>
+                <h1 className="text-4xl font-bold md:text-5xl">{props.title}</h1>
                 <h3 className="text-base leading-[1.3]">{props.subtitle}</h3>
                 <ul>
                     <li className="flex mb-2 items-start"><img src={props.listIcon} alt="dot point" className="mr-2" />{props.listPoints[0]}</li>
@@ -46,4 +46,5 @@ export default function Form(props) {
         </section>}
         </>
     )
+
 }
